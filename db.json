@@ -3,6 +3,7 @@
         
     ],
     "login-form": [
+        {
           "schema": {
             "id": "schema_userform",
             "type": "object",
@@ -74,5 +75,6 @@
               }
             }
           }
+        }
       ]
 }
