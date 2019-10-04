@@ -56,11 +56,6 @@
                     "validator": true,
                     "message": "Password is required"
                   }
-                ],
-                "validationMessage": [
-                  {
-                    "required": "Email is required"
-                  }
                 ]
               },
               "signup": {
