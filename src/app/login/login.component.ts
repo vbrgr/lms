@@ -15,15 +15,15 @@ export class LoginComponent implements OnInit {
   constructor(private forms: FormService) {
     this.forms.getForm().subscribe(res => {
       const main = [];
-      this.formdata = res[0].schema.properties;
-      res[0].form[0].items.forEach(newkey => {
+      this.formdata = res.schema.properties;
+      res.form[0].items.forEach(newkey => {
         newkey.items.forEach(key => {
           const data = this.getData(key);
           main.push(data);
         });
 
       });
-      main.push(res[0].schema);
+      main.push(res.schema);
       localStorage.setItem('jsondata', JSON.stringify(main));
     });
   }
