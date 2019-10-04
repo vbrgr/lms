@@ -1,0 +1,4 @@
+<div *ngIf="field"  [class]="field.groupClass">
+<button *ngIf="field.inputType!=='reset'" [class]="field.htmlClass" type="field.inputType" [disabled]="group.status==='INVALID'"   >{{field.label}}</button>
+<button  *ngIf="field.inputType==='reset'" [class]="field.htmlClass" type="field.inputType" (click)="onReset()"  >{{field.label}}</button>
+</div>

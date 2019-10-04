@@ -1,5 +1,85 @@
 {
     "users":[
         
-    ]
+    ],
+    "login-form": [
+        {
+          "schema": {
+            "id": "schema_userform",
+            "type": "object",
+            "title": "Login",
+            "properties": {
+              "email": {
+                "name": "email",
+                "title": "Email Address",
+                "label": "Email Address",
+                "type": "input",
+                "inputType": "email",
+                "htmlClass": "form-control",
+                "groupClass": "form-group",
+                "columnClass": "col-md-12",
+                "description": "",
+                "validations": [
+                  {
+                    "name": "required",
+                    "validator": true,
+                    "message": "Email is required"
+                  },
+                  {
+                    "name": "pattern",
+                    "validator": "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$",
+                    "message": "Invalid email"
+                  }
+                ],
+                "validationMessage": [
+                  {
+                    "required": "Email is required"
+                  },
+                  {
+                    "pattern": "Invalid email"
+                  }
+                ]
+              },
+              "password": {
+                "name": "password",
+                "title": "Password",
+                "label": "Password",
+                "type": "input",
+                "inputType": "password",
+                "htmlClass": "form-control",
+                "groupClass": "form-group",
+                "columnClass": "col-md-12",
+                "description": "",
+                "validations": [
+                  {
+                    "name": "required",
+                    "validator": true,
+                    "message": "Password is required"
+                  }
+                ],
+                "validationMessage": [
+                  {
+                    "required": "Email is required"
+                  }
+                ]
+              },
+              "signup": {
+                "type": "button",
+                "inputType": "link",
+                "href": "/sign-up",
+                "htmlClass": "btn btn-default ws_cancel",
+                "label": "Sign Up",
+                "groupClass": "form-inline-btn"
+              },
+              "login": {
+                "type": "button",
+                "inputType": "submit",
+                "htmlClass": "btn btn-success",
+                "groupClass": "form-inline-btn",
+                "label": "Login"
+              }
+            }
+          }
+        }
+      ]
 }

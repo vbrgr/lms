@@ -1,0 +1,8 @@
+<div *ngIf="field" [formGroup]="group" [class]="field.columnClass" >
+<div  [class]="field.groupClass" > <label>{{field.label}}</label>
+    <div *ngIf="field.enum">
+    <label *ngFor="let item of field.enum" ><input [formControlName]="field.name" [class]="field.htmlClass" type="checkbox" value="{{ item.value }}" > {{item.key}} </label></div>
+<ng-container *ngFor="let validation of field.validations;" class="invalid-feedback" >
+     <span class="error-message"  *ngIf="group.get(field.name).hasError(validation.name) && group.get(field.name).touched">{{validation.message}}</span>
+ </ng-container>
+</div></div>

@@ -1,0 +1,56 @@
+  <div class="pageHeading">
+    <div class="container-fluid">
+      <div class="left-col">
+          <div *ngFor="let field of fields;"  class="btn-inline">
+                  <h2 class="likeWhat" *ngIf="field && field.type==='object'" dynamicField [field]="field" ></h2>
+                 <!-- <ng-container *ngIf="field.type==='button'" dynamicField [field]="field" [group]="form">
+                  </ng-container> -->
+            </div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="main-container">
+        <div id="wizard" class="changePwd ssoWizard">
+          <div class="newUser">
+          <div class="bigitem noborder">
+            <div class="editProfileForm ssoProfileForm">
+                <div class="container">
+                <div class="col-md-12">
+              
+              <form class="dynamic-form" [formGroup]="form" (submit)="onSubmit($event)" >
+                  <div class="row">
+                <div *ngFor="let field of fields;" >
+                
+                  <ng-container *ngIf="field && field.type!=='object' && field.type!=='button'" dynamicField [group]="form" [field]="field" >
+                  </ng-container>
+                </div>
+                </div>
+                <div class="row actions"  >
+                <div *ngFor="let field of fields;" class="btn-inline">
+                      <ng-container *ngIf="field &&  field.type==='button'"  [group]="form" dynamicField [field]="field">
+                      </ng-container>
+                    </div>
+                  </div>
+              </form>
+
+
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="margin-top json-data-output" *ngIf="formSubmited"  >
+          <div  class="bigitem editProfileForm-add">          
+            <div class="editProfileForm ">
+              <div *ngIf="value" class="row">
+                  {{ value | json }}
+              </div>
+            </div>
+      </div>
+</div>
+</div>
