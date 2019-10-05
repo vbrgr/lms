@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ /* @import url('assets/css/menu.css'); */
+
+ @import url('assets/css/style.css');
+@import url('assets/css/responsive.css');
+@import url('assets/css/slide-menu.css');
+@import url('assets/css/tuebora-styles.css');
+ .topnavi .content-page{ margin-left: 0;}
+.top-noicon .content-page{ margin-left: 0;}
+.top-noicon .profileNav > a{ margin-bottom: 0px !important;}
+.top-noicon .rightNavigation > li > a{     margin: 0;}
+.top-noicon .navbar-right.navbar-nav>li>a{     padding: 0px 15px 0px 0px !important;}
+
+.pageHeading{ margin-top:74px;}
+.side-toggle .pageHeading{ margin-top:0px;}
+.sidebar-mini .content-page{ margin-left: 70px;}
+.sidebar-mini .pageHeading{     margin-top: 0;}
+.btn.toggle{ position: absolute; top: 12px;left: 28px;  background: none;  font-size: 20px;  padding: 0; border: none;}
+
+.ng-sidebar {  min-width: 250px;  max-width: 250px;  background: #404E67;  color: #fff;  transition: all 0.3s;}
+.ng-sidebar.active {margin-left: -250px;}
+.ng-sidebar .sidebar-header { padding: 20px; background: #404d66; border-bottom: solid 1px rgba(200, 200, 200, 0.25);}
+.ng-sidebar ul.components { padding: 20px 0;}
+.ng-sidebar ul p {  color: #fff;  padding: 10px;}
+.ng-sidebar ul li a {  padding: 10px;  font-size: 1.1em;  display: block;  color: #fff;}
+.ng-sidebar ul li a:hover {  color: #FFF;  background-color: hsla(0,0%,78.4%,.2);}
+.ng-sidebar ul li.active>a, a[aria-expanded="true"] {   color: #fff;  background: #3a4458;}
+a[data-toggle="collapse"] {  position: relative;}
+.dropdown-toggle::after {  display: block;  position: absolute;  top: 50%;  right: 20px;  transform: translateY(-50%);}
+
+.ng-sidebar .caret { margin-top: 9px;  position: absolute;  right: 18px;  color: #fff;}
+.ng-sidebar ul li ul{    background: #323a4b;}
+
+.ng-sidebar ul li .icon {font-size:20px; float: left;  margin-right: 25px;  line-height: 20px;  width: 30px;  text-align: center;  color: #a9afbb;}
+.ng-sidebar ul li li .icon{ font-size:16px;}
+.close-btn{ width: 32px; height: 32px; border-radius: 100%; border: solid 1px #FFF; position: absolute;
+  right: 10px; background: none;}
+  .close-btn i{ color: #FFF;}

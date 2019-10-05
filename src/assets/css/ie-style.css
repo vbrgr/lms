@@ -1,0 +1,18 @@
+/* Bootstrap Over Ride Styles and Bootstrap Styles */
+.step-progress, .profileNav a, .pageHeading .container-fluid{display:table; height:100%;}
+.profilePic, .title, .profileNav .myMenu .glyphicon-chevron-down{display:inline-block; vertical-align:middle}
+.list{display:block;}
+.list-item{float:left; min-height:208px;}
+
+.panel-collapse.in.collapse{position:relative; top:-3px;}
+.panel-group .panel-title .expandCollapse{ display:table}
+.panel-group .panel-title .expandCollapse .btn, .left-col, .right-col{display:table-cell; vertical-align:middle}
+.right-col{width:25%;}
+.panel-white > .panel-heading{display:inline-block}
+.panelViewActions{display:inline-block; width:100%;position:relative; top:2px;}
+
+.pageHeading{min-height:inherit; display:block;}
+
+.step-progress > div{display:table-cell}
+.step-progress-div.current:last-child::after, .step-progress > div:last-child::before, .done.step-progress-div:last-child::after, .done.current.step-progress-div:last-child::after{left:auto;}
+.step-progress-div::before, .current.step-progress-div::after, .done.step-progress-div::after, .current.done.step-progress-div::after{left:40%;}

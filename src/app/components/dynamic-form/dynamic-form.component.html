@@ -1,8 +1,10 @@
   <div class="pageHeading">
     <div class="container-fluid">
       <div class="left-col">
-          <div *ngFor="let field of fields;"  class="btn-inline">
-                  <h2 class="likeWhat" *ngIf="field && field.type==='object'" dynamicField [field]="field" ></h2>
+          <div *ngFor="let field of fields;"  >
+            <div *ngIf="field && field.type==='object'"  class="btn-inline">
+                  <h2 class="likeWhat" dynamicField [field]="field" ></h2>
+                </div>
                  <!-- <ng-container *ngIf="field.type==='button'" dynamicField [field]="field" [group]="form">
                   </ng-container> -->
             </div>
@@ -28,9 +30,11 @@
                 </div>
                 </div>
                 <div class="row actions"  >
-                <div *ngFor="let field of fields;" class="btn-inline">
+                <div *ngFor="let field of fields;" >
+                  <div class="btn-inline" >
                       <ng-container *ngIf="field &&  field.type==='button'"  [group]="form" dynamicField [field]="field">
                       </ng-container>
+                    </div>
                     </div>
                   </div>
               </form>

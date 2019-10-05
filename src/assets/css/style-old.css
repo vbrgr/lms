@@ -1,0 +1,169 @@
+/* Bootstrap Over Ride Styles */
+body{padding-top:64px; background:#cad7e8;}
+.container-fluid{padding-right:40px; padding-left:40px;}
+*, body{color:#7186a3; font-size:13px; font-family:'OpenSans'}
+.navbar-default{background:#fff; border-color: #ccd8e8; border-bottom-width:2px; border-top:0px;}
+.navbar{min-height:64px;}
+.navbar-brand{height: 64px;padding: 8px 15px;}
+#navbar{height: 64px;padding: 7px 0px 0 0;}
+.form-control{font-size:13px;}
+.btn{border-radius:0px;}
+.btn:active, .btn:focus, .btn:hover, .btn:visited{background:transparent!important;outline:0!important; box-shadow:none !important}
+.btn-default{border-color:#ccd8e8;}
+.dropdown-menu {border-radius:0px !important; box-shadow:none;}
+.tooltip > .tooltip-inner {background-color: #7186a3;}
+.tooltip.top > .tooltip-arrow { border-top-color:#7186a3; }
+.progress, .progress-bar-success, .progress-bar-warning, .progress-bar-danger{ border-radius:10px;}
+.progress > div + div{margin-left:-10px;}
+.progress > div + div + div{z-index:-1}
+.progress-bar-success{background:#4fc5c5;}
+.progress-bar-success + .tooltip > .tooltip-inner {background-color: #4fc5c5;}
+.progress-bar-success + .tooltip.top > .tooltip-arrow { border-top-color:#4fc5c5; }
+.progress-bar-warning{background:#e79450;}
+.progress{background:#dee7f4}
+.progress-bar-danger{background:#cc7480}
+
+
+/* Default Styles */
+.glyphicon{color:#98adca}
+a:active, a:focus, a:hover, .a:visited {text-decoration:none; outline:none}
+input[type="text"]{border-color:#ccd8e8 !important; border-radius:0px;}
+input[type="text"]:focus{outline:none !important; box-shadow:none !important}
+ul{margin:0px; list-style:none;padding:0px;}
+.noborder{border:none !important;}
+.noborder.glyphicon{top:1px !important}
+.left-col{width:80%; float:left}
+.right-col{width:20%; float:right}
+.nobg{background:transparent !important}
+
+
+/* Navigation Styles */
+.top-navigation li a {margin-top: 7px; padding-top:0px;padding-bottom: 0px;}
+.menu-large{position:static !important}
+.navbar-nav.leftNavigation>li.menu-large .dropdown-menu{width:100%; margin-top:1px;background: #FFFFFF;}
+.navbar-default .navbar-nav.leftNavigation>.open>a.myMenu{background:#004b88 !important; color:#fff !important; border:1px solid #ccd8e8}
+.navbar-nav.leftNavigation .open .myMenu span{color:#fff !important}
+.myMenu .glyphicon{padding: 10px;top: 0px;border-right: 1px solid #ccd8e8; margin-right:5px}
+.myMenu .glyphicon-chevron-down {font-size: 10px; border:none;margin:0px; top:-1px; padding:0px 10px}
+.myMenu .glyphicon-bell{border:none; margin:0px;}
+.menu-large.open .glyphicon-chevron-down:before{content:'\e014'}
+.myMenu, .dropdown.pull-right .dropdown-toggle{border:1px solid #ccd8e8 !important; padding: 0px !important;}
+.menuText {position: relative;top: -2px;}
+.leftNavigation .dropdown-menu span[class*='tueboraIcon-']{color:#004b88; font-size:30px;top: 8px;margin-right: 3px;position: relative;}
+
+/*Flex items*/
+.list {display: flex; flex-wrap:wrap; margin:10px 0}
+.list-item {display: flex; width: 19.6667%; border-left:1px solid #ccd8e8; margin-bottom:10px;}
+.list-item:first-child{border-left:0px;}
+.list-content {background-color: #fff;display: flex;flex-direction: column;padding: 0 1em;width: 100%; margin-top:1%}
+.list-content p {flex: 1 0 auto;}
+.list-content h2{margin-top:0px; line-height:0px;}
+.list-content h2 a{font-family:'OpenSansSemibold'; color:#004b88; font-size:14px; font-weight:600}
+.list-content .glyphicon{margin-right:10px;}
+.list-content ul{margin-left:35px;}
+.list-content ul li{margin-bottom:6px;}
+.list-content ul li a{font-size:13px; color:#7186a3;}
+
+/* Right Menu */
+.rightNavigation{margin-right:0px;}
+.rightNavigation.navbar-right .dropdown-menu {left: auto;right:auto; margin-top:-5px; border:0px; padding:0px; box-shadow:none; -webkit-box-shadow:none}
+.navbar-default .navbar-nav.rightNavigation .myMenu, .navbar-default .navbar-nav.rightNavigation .myMenu:focus{background:transparent;}
+
+.notifications {border: 1px solid #ccd8e8;width: 300px; position:relative;}
+.dropdown-toggle.notificationIcon {margin-top: 13px;padding: 0px;}
+.notificationIcon span[class*="tueboraIcon-"]{font-size:22px; padding:5px; border:1px solid #ccd8e8}
+.details span[class^="tueboraIcon-"] {font-size: 25px;float: left;margin-right: 12px;position: relative;top: 5px;color:#004b88;}
+.notifications h3,.notifications .show-all {margin: 0;padding: 16px 10px; text-shadow:none;display: block;color:#7186a3;}
+.notifications h3 {cursor: default;font-weight: 600; background:#f5f9fe; font-size:14px;}
+.notifications-list{padding:5px 10px;}
+.notifications-list .title{display:block; color:#004b88; font-size:14px;}
+.notifications-list .title.latest{color:#4fc5c5}
+.notifications-list .time{font-size:13px; color:#cad7e8}
+li.notification.profileNav .dropdown-menu{left:auto; right:8.3%;}
+.notification .profileIcon {position: absolute;top: 10px;width: 90%; margin:0 15px;border-bottom:1px solid #ccd8e8;}
+.notification .profileIcon .large-size {position:relative ;left: 38%;font-size: 20px !important;border: 1px solid #ccd8e8;padding: 20px;border-radius: 50%;background: #fff;color: #98adca;}
+.notification .profileIcon h3{background:transparent; text-align:center; font-size:16px; color:#7186a3}
+.noti_count{position:absolute; top:-16px; right:-6px; background:#4fc5c5; color:#fff; border-radius:50%; width: 20px;height: 20px;font-size: smaller;text-align: center;line-height: 20px;}
+.details {margin: 10px 0;}
+.profileNav .myMenu{border:0px !important}
+.profileNav .myMenu .glyphicon{border-radius:50%; border:1px solid #ccd8e8;}
+.profileNav .submenuNav {padding: 5px 10px;position: relative;margin-top: 70px;}
+.profileNav .submenuNav li{font-size:14px; margin:15px 0}
+.profileNav .submenuNav li a{color:#7186a3;}
+.profileNav .submenuNav li .glyphicon{font-size:14px; margin-right:20px; color:#98adca;top: 3px !important;}
+.profileNav .myMenu .glyphicon-chevron-down {padding:0px 0 0 10px}
+
+/* Pointed Arrow Styles */
+.dropdown-menu:after {content: '';position: absolute;border-style: solid;border-width: 0 6px 6px;border-color: #FFFFFF transparent;display: block;width: 0;z-index: 1;top: -5px;left: 26%;}
+.dropdown-menu:before {content: '';position: absolute;border-style: solid;border-width: 0 7px 7px;border-color: #ccd8e8 transparent;display: block;width: 0;
+z-index: 0;top: -7px;left: 25.97%;}
+
+/* Notofication Arrow Position */
+.notification .dropdown-menu:after{left:4%; border-color:#f5f9fe transparent;}
+.notification .dropdown-menu:before{left:3.65%}
+li.notification.profileNav .dropdown-menu:after{right:4%; left:auto; border-color:#f5f9fe transparent;}
+li.notification.profileNav .dropdown-menu:before{right:3.65%;left:auto;}
+
+.dropdown.pull-right .dropdown-menu:after{right:4%; left:auto; border-color:#f5f9fe transparent;}
+.dropdown.pull-right .dropdown-menu:before{right:3.65%;left:auto;}
+
+.right-col .dropdown.pull-right .dropdown-menu:after{border-color: #fff transparent;}
+
+/* Token Input styles */
+body div.token-input-dropdown-facebook{z-index:1031}
+div.token-input-dropdown-facebook p{font-weight:normal;}
+ul.token-input-list-facebook{border-color:#ccd8e8; width:auto; min-width:300px;}
+ul.token-input-list-facebook li input{padding:5px 8px;}
+
+/* Container Styles */
+.pageHeading{background:#dee7f4;padding:5px 0;min-height:50px;margin-bottom:24px;}
+.pageHeading h2{color:#004b88; font-family:'OpenSans'; margin:0px; font-size:16px;display: table-cell;vertical-align:middle; height:40px;width: 100%;line-height: 22px;}
+.pageHeading li.notification.profileNav .dropdown-menu{right:0;}
+.right-col .nav{margin-top:2px; margin-right:0px;}
+.settings a{display: table-cell !important;vertical-align:middle; height:35px;}
+.dropdown.pull-right{margin-left:10px;}
+.dropdown.pull-right li{margin:5px 10px;}
+.nav.navbar-right .dropdown a, .nav.navbar-right .dropdown a:hover, .nav.navbar-right .dropdown a:focus, .nav.navbar-right .dropdown a:visited{background:#fff !important}
+.right-col .dropdown-menu .divider{background:#ccd8e8 !important}
+.right-col li .dropdown-menu{margin-top:7px;}
+.right-col li span{padding:10px;}
+.right-col li.notification.profileNav .dropdown-menu:after{border-color:#fff transparent;}
+
+.panel{border-color:#becadc; border-radius:0px !important;}
+.panel-white {background-color: #ffffff;position: relative;color: #8B91A0;}
+.panel-body p{line-height:22px;}
+.panel-white > .panel-heading > .panel-title{font-family:'OpenSansSemibold'; color:#7186a3; font-size:14px; font-weight:600}
+.panel-group .panel-heading {padding-right:0px; position:relative}
+.panel-group .panel-title {font-size: 13px;color: #7186a3;font-family: 'OpenSans';}
+.panel-group .panel-title a{display:block;}
+.panel-white > .panel-heading {background-color: #f5f9fe;position: relative;border-bottom-width: 1px;border-color:#becadc;border-bottom-style: solid;padding: 15px;min-height: 50px;}
+.panel-heading > .btn-group.pull-right{position:absolute; top:10px; right:15px;border-left: 2px solid #becadc;}
+.actionBtns a{padding:2px 7px; margin-left:3px !important;}
+.actionBtns a.btn,.actionBtns a.btn:hover{background:#e6e6e6 !important}
+.actionBtns a.btn.nobg{background:transparent !important}
+.actionBtns a i{color:#afafaf !important}
+
+.panel-group .panel-title a span:first-child:before, .panel-group .panel-title a span:last-child:before{content:''; padding:0px;}
+.panel-group .panel-title a span:before {content: "|";padding: 10px;position: relative;top: -1px;}
+.panel-group .panel-title a span:last-child{margin-left:30px;float: right;right: 5%;position: relative; font-weight:bold}
+.panel-group .panel-title a + a {border-left: 1px solid #ccd8e8;position: absolute;right: 0;top:0px;}
+.panel-group .panel-title a + a .btn{padding:10px;}
+.panel-group .panel-title a + a[aria-expanded="true"] {background: #dee7f4;}
+.panel-group .panel-title a + a.pull-right[aria-expanded="true"] i:before{content:'\f068'; color:#6ec4cb}
+.panel-group .panel-title a .progress{margin:0px; height:10px; min-width:250px;float:left;}
+.main-container{background:#fff;}
+
+
+
+/* Sprite css 
+.tueboraImg{background:url(../../images/tuebora-img.png)}
+.myMenuIcon{background-position:-1px -1px; height:15px; width:15px;}
+.myMenuIcon:hover{background-position:-1px -19px; height:15px; width:15px;}*/
+
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
+}

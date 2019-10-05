@@ -15,6 +15,7 @@ export interface FieldConfig {
   value?: any;
   validations?: Validator[];
   htmlClass?: string;
-  groupClass: string;
+  groupClass?: string;
+  columnClass?: string;
   formTitle: string;
 }

@@ -1,0 +1,455 @@
+﻿/*
+    Common 
+*/
+
+.wizard,
+.tabcontrol
+{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wizard a,
+.tabcontrol a
+{
+    outline: 0;
+}
+
+.wizard ul,
+.tabcontrol ul
+{
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.wizard ul > li,
+.tabcontrol ul > li
+{
+    display: block;
+    padding: 0;
+}
+
+/* Accessibility */
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info
+{
+    position: absolute;
+    left: -999em;
+}
+
+.wizard > .content > .title,
+.tabcontrol > .content > .title
+{
+    position: absolute;
+    left: -999em;
+}
+
+
+
+/*
+    Wizard
+*/
+
+.wizard > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.wizard.vertical > .steps
+{
+    display: inline;
+    float: left;
+    width: 30%;
+}
+
+.wizard > .steps .number
+{
+    font-size: 1.429em;
+}
+
+.wizard > .steps > ul > li
+{
+    width: 25%;
+}
+
+.wizard > .steps > ul > li,
+.wizard > .actions > ul > li
+{
+    float: left;
+}
+
+.wizard.vertical > .steps > ul > li
+{
+    float: none;
+    width: 100%;
+}
+
+.wizard > .steps a,
+.wizard > .steps a:hover,
+.wizard > .steps a:active
+{
+    display: block;
+    width: auto;
+    margin: 0 0.5em 0.5em;
+    padding: 1em 1em;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard > .steps .disabled a,
+.wizard > .steps .disabled a:hover,
+.wizard > .steps .disabled a:active
+{
+    background: #eee;
+    color: #aaa;
+    cursor: default;
+}
+
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active
+{
+    background: #2184be;
+    color: #fff;
+    cursor: default;
+}
+
+.wizard > .steps .done a,
+.wizard > .steps .done a:hover,
+.wizard > .steps .done a:active
+{
+    background: #9dc8e2;
+    color: #fff;
+}
+
+.wizard > .steps .error a,
+.wizard > .steps .error a:hover,
+.wizard > .steps .error a:active
+{
+    background: #ff3111;
+    color: #fff;
+}
+
+.wizard > .content
+{
+    background: #eee;
+    display: block;
+    margin: 0.5em;
+    min-height: 35em;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard.vertical > .content
+{
+    display: inline;
+    float: left;
+    margin: 0 2.5% 0.5em 2.5%;
+    width: 65%;
+}
+
+.wizard > .content > .body
+{
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.wizard > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.wizard > .content > .body ul > li
+{
+    display: list-item;
+}
+
+.wizard > .content > .body > iframe
+{
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+}
+
+.wizard > .content > .body input
+{
+    display: block;
+    /* border: 1px solid #ccd8e8; */
+}
+
+.wizard > .content > .body input[type="checkbox"]
+{
+    display: inline-block;
+}
+
+.wizard > .content > .body input.error
+{
+    background: rgb(251, 227, 228);
+    border: 1px solid #fbc2c4;
+    color: #8a1f11;
+}
+
+.wizard > .content > .body label
+{
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.wizard > .content > .body label.error
+{
+    color: #8a1f11;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.wizard > .actions
+{
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+
+.wizard.vertical > .actions
+{
+    display: inline;
+    float: right;
+    margin: 0 2.5%;
+    width: 95%;
+}
+
+.wizard > .actions > ul
+{
+    display: inline-block;
+    text-align: right;
+}
+
+.wizard > .actions > ul > li
+{
+    margin: 0 0.5em;
+}
+
+.wizard.vertical > .actions > ul > li
+{
+    margin: 0 0 0 1em;
+}
+
+.wizard > .actions a,
+.wizard > .actions a:hover,
+.wizard > .actions a:active
+{
+    background: #2184be;
+    color: #fff;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard > .actions .disabled a,
+.wizard > .actions .disabled a:hover,
+.wizard > .actions .disabled a:active
+{
+    background: #eee;
+    color: #aaa;
+}
+
+.wizard > .loading
+{
+}
+
+.wizard > .loading .spinner
+{
+}
+
+
+
+/*
+    Tabcontrol
+*/
+
+.tabcontrol > .steps
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.tabcontrol > .steps > ul
+{
+    position: relative;
+    margin: 6px 0 0 0;
+    top: 1px;
+    z-index: 1;
+}
+
+.tabcontrol > .steps > ul > li
+{
+    float: left;
+    margin: 5px 2px 0 0;
+    padding: 1px;
+
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabcontrol > .steps > ul > li:hover
+{
+    background: #edecec;
+    border: 1px solid #bbb;
+    padding: 0;
+}
+
+.tabcontrol > .steps > ul > li.current
+{
+    background: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 0 none;
+    padding: 0 0 1px 0;
+    margin-top: 0;
+}
+
+.tabcontrol > .steps > ul > li > a
+{
+    color: #5f5f5f;
+    display: inline-block;
+    border: 0 none;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li > a:hover
+{
+    text-decoration: none;
+}
+
+.tabcontrol > .steps > ul > li.current > a
+{
+    padding: 15px 30px 10px 30px;
+}
+
+.tabcontrol > .content
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    padding-top: 20px;
+}
+
+.tabcontrol > .content > .body
+{
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.tabcontrol > .content > .body ul
+{
+    list-style: disc !important;
+}
+
+.tabcontrol > .content > .body ul > li
+{
+    display: list-item;
+}
+
+
+
+/* Override Styles */
+.wizard{
+	padding:3em 2em;
+	font-family:'OpenSansSemibold';
+	color:#7186a3;
+}
+.wizard > .content{
+	min-height:100%;
+	border:1px solid #ccd8e8;
+	border-radius:0px;
+	background:#fff;
+	margin:0px;
+	overflow:visible
+}
+.wizard span.title{font-size:14px;}
+.wizard > .content > .body{	width:100%;position:relative; float:none; display:table;padding:0px}
+.wizard > .content > .body label{font-size:14px; margin-bottom:10px; font-weight: normal;}
+.wizard > .content > .body label.checkbox{margin-bottom:5px;font-weight: normal;}
+.wizard > .content > .body .tableCellLeft, .wizard > .content > .body .tableCellRight{display:table-cell;}
+.wizard > .content > .body .tableCellLeft{width:70%; padding:2.5% 2.5% 0 2.5%}
+.wizard > .content > .body .tableCellRight{width:27%; padding:0 0 0 0; border-left: 1px solid #ccd8e8; vertical-align:top}
+
+.wizard .steps ul, .tabcontrol ul{display:table; width:100%;}
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active, .wizard > .steps .disabled a, .wizard > .steps .disabled a:hover, .wizard > .steps .disabled a:active,.wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active
+{
+	color:#7186a3;
+	font-size:14px;
+	background:#fafbfc;
+	text-align:center;
+	padding: 10px;
+	border: 1px solid #dfe1e4;
+	border-radius: 0px;
+}
+.wizard > .steps .number{display:none;}
+.wizard > .steps > ul > li{width:25%;}
+/*.wizard > .steps > ul > li:first-child, .wizard > .steps > ul > li:last-child{width:18%}	
+.wizard > .steps > ul > li:first-child a, .wizard > .steps > ul > li:last-child a{text-indent:0;}
+.wizard > .steps > ul > li:nth-child(2) a{text-indent:-30px;}
+.wizard > .steps > ul > li:nth-child(3) a{text-indent:10px;}*/
+.wizard > .steps > ul > li:first-child a, .wizard > .steps > ul > li:first-child a:hover{text-align:left;}
+.wizard > .steps > ul > li:last-child a, .wizard > .steps > ul > li:last-child a:hover{text-align:right;}
+.wizard > .steps li:last-child a:before{right:0px;}
+.wizard > .steps{width:100%; margin:0px auto; margin-bottom:20px;}
+.step-progress {clear:both; width:100%; margin:0px auto;}
+.step-progress > div{width:25%;position:relative; border:2px solid #617a9d; text-align:center; float:left}
+.step-progress > div.current{border:2px solid #fbb80b;transition: all 2s;}
+.step-progress > div:first-child:before{left:-3px;}
+.step-progress > div:first-child:after, .step-progress > div.done.current:first-child:after{left:3px; margin-left:0px;}
+.step-progress > div:last-child:before{right:-3px;}
+.step-progress > div:last-child:after{right:3px; margin-left:0px;}
+
+.content.clearfix:after {content: '';position: absolute;border-style: solid;border-width: 0 8px 8px;border-color: #f5f9fe transparent;display: block;width: 0;z-index: 1;top: -8px;left: 49.1%;}
+.content.clearfix:before {content: '';position: absolute;border-style: solid;border-width: 0 9px 9px;border-color: #ccd8e8 transparent;display: block;width: 0;
+z-index: 0;top: -9px;left: 49%;}
+.wizard > .content > .title{display:none !important}
+.wizard > .content > .title, .tabcontrol > .content > .title{position:relative; left:0px;display:none}
+.wizard > .content > .title.current{display:block; background:#f5f9fe; height:55px; line-height:55px; text-align:center; font-size:18px; outline:0;}
+.wizard > .actions{background:#627a9e;height:55px;padding-top:0px; padding-right:0px;}
+.wizard > .actions > ul{display:block; height:100%; margin:0px;}
+.wizard > .actions > ul li{height:100%; margin:0px; float:right}
+.wizard > .actions > ul li:first-child{float:left}
+.wizard > .actions > ul li a[href^="#previous"]{background:#fff !important; color:#066bbd;}
+.wizard > .actions > ul li a[href^="#previous"]:before{content:'\f053'; font-family:'FontAwesome'; font-size:10px; margin-right:5px;}
+.wizard > .actions > ul li a[href^="#next"]:after, .wizard > .actions > ul li a[href^="#finish"]:after, .wizard > .actions > ul li a[href^="#cancel"]:after{content:'\f054'; font-family:'FontAwesome'; font-size:10px; margin-left:5px;}
+.wizard > .actions .ws_cancel{display:none;}
+.wizard > .actions > ul .beginSetup{background:#72b100; color:#fff; height:100%; line-height:40px; border-radius:0px;padding:0.5em 26px}
+.wizard > .actions > ul .ws_cancel{background:#ea6c55; color:#fff; height:100%; line-height:40px; border-radius:0px;padding:0.5em 26px; margin-right:10px;}
+.wizard > .actions > ul .ws_cancel:after{content:'\f054'; font-family:'FontAwesome'; font-size:10px; margin-left:5px;}

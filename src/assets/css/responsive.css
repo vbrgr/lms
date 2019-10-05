@@ -1,0 +1,41 @@
+@media (max-width:950px){
+	.tokenInputList{display:none}
+}
+
+@media (max-width:850px){
+	.container-fluid{padding-left:20px; padding-right:20px;}
+}
+@media (min-width:768px) and (max-width:1024px){
+	.syncDetails li{display:inline-block; margin-bottom:10px; float:none}
+	ul.token-input-list-facebook {max-width: 180px;min-width: 160px;}
+	.changePwd.wizard .steps li a > i{display:none}
+	.postSetup{padding:60px;}
+}
+@media (min-width: 768px){
+	.modal-dialog {width:878px;}
+}
+
+@media (min-width:768px) and (orientation:landscape){
+	.applicationsContent .appList{margin:20px 15px 25px}
+}
+
+@media (min-width:768px) and (orientation:portrait){
+	.modal-dialog {width:80%;}
+	.loginRightBlock{padding:50px 40px 40px}
+	.table td{white-space:nowrap}
+	.changePwd.wizard > .content > .body{width: 100%;display: inline-block;}
+	.changePwd.wizard > .content > .body table{margin-bottom: 20px;}
+	.pwdPolicy.picker-popover.popover.fade.right.in{left:auto !important; right:0px;}
+	.activityAction{padding:0px;}
+	.activityAction > .col-md-6:first-child{border-bottom: 1px solid #ccd8e8; border-right:0px;}
+	.uploadBtn{margin-bottom:10px;}
+	.postSetup{padding:0px;}
+	.item .appList{width:85px;margin-left: 15px; margin-right: 10px;min-height: 110px;}
+	.modalListImage{width: 100%;}
+	.owl-carousel .owl-item .modalListImage img{width: 100% !important;}
+	.item .appList .setCred img{margin-top: 6px !important;}
+	.owl-carousel .owl-item img{margin: 0 auto;}
+	.item .appList .setCred{height: 30px;width: 30px;}
+	.applicationsContent .appList{margin:20px 10px 25px}
+	.applicationsContent .mCustomScrollbar .appList{margin: 25px 18px 10px;}
+}

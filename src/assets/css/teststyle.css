@@ -1,0 +1,38 @@
+/* Bootstrap Over Ride Styles and Bootstrap Styles */
+.main-container{margin-bottom:30px;}
+.error{position:relative}
+.error label{color:#ea6c55}
+.error input[type="text"], .error input[type="email"], .error select{border-color:#ea6c55 !important}
+.errorDetail{position:absolute; top:38px; right:25px;}
+.errorDetail span{background:#ea6c55; color:#fff; padding:7px 10px; margin-right:0px; top:28px; position:relative; max-width:280px;display:block}
+.errorDetail i{color:#ea6c55; font-size:19px; font-weight:bold; position:absolute; right:0px;}
+.errorDetail span:after {content: '';position: absolute;border-style: solid;border-width:0 7px 7px;border-color: #ea6c55 transparent;display: block;width: 0;z-index: 1;top: -6px;right: 2%;}
+.errorDetail span:before {content: '';position: absolute;border-style: solid;border-width:0 7px 7px;border-color: #ffffff transparent;display: block;width: 0;z-index: 0;top: -8px;right: 2%;}
+.infoContent:after{content: '';position: absolute;border-style: solid;border-width:0 7px 7px;border-color: #617a9d transparent;display: block;width: 0;z-index: 1;top: -6px;left: 5%;}
+.infoContent:before {content: '';position: absolute;border-style: solid;border-width:0 7px 7px;border-color: #ffffff transparent;display: block;width: 0;z-index: 0;top: -8px;left: 5%;}
+.form-group input.error, .form-group input.error:focus{border-color:#ea6c55 !important}
+.editProfileForm label.error{color:#ea6c55}
+.popover .arrow:after{border-bottom-color:#617a9d !important}
+.popover{background-color:#617a9d;}
+.popover .popover-content{ color:#fff;}
+.newUser {position: relative;}
+.progresscusor{cursor:progress}
+a.waitcursor{cursor:wait !important}
+.modal-content i{font-family:FontAwesome; vertical-align:middle}
+.fa-spinner{-webkit-animation: spin 6s infinite linear;
+    -moz-animation: spin 6s infinite linear;
+    -ms-animation: spin 6s infinite linear;
+    -o-animation: spin 6s infinite linear;
+    animation: spin 2s infinite linear;}
+.fa-spinner:before{-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);}
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+    to { -moz-transform: rotate(360deg); }
+}

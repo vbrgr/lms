@@ -14,11 +14,13 @@ export class LoginComponent implements OnInit {
   @ViewChild('DynamicFormComponent') form: DynamicFormComponent;
   constructor(private forms: FormService) {
     this.forms.getForm().subscribe(res => {
-      // console.log(res[0].schema.properties);
-      const main = [];
       this.formdata = res[0].schema.properties;
-      console.log(this.formdata);
-      localStorage.setItem('jsondata', JSON.stringify(this.formdata));
+      const main = [];
+      Object.keys(this.formdata).forEach( (k, v) => {
+        main.push(this.getData(k));
+      });
+     // console.log(main);
+      localStorage.setItem('jsondata', JSON.stringify(main));
     });
   }
   regConfig: FieldConfig[] = JSON.parse(localStorage.getItem('jsondata'));
@@ -29,6 +31,7 @@ export class LoginComponent implements OnInit {
    // console.log(value);
    }
    ngOnInit() {
+   // console.log(this.regConfig);
   }
 }
 
