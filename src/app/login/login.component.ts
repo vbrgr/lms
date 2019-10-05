@@ -14,17 +14,11 @@ export class LoginComponent implements OnInit {
   @ViewChild('DynamicFormComponent') form: DynamicFormComponent;
   constructor(private forms: FormService) {
     this.forms.getForm().subscribe(res => {
+      // console.log(res[0].schema.properties);
       const main = [];
-      this.formdata = res.schema.properties;
-      res.form[0].items.forEach(newkey => {
-        newkey.items.forEach(key => {
-          const data = this.getData(key);
-          main.push(data);
-        });
-
-      });
-      main.push(res.schema);
-      localStorage.setItem('jsondata', JSON.stringify(main));
+      this.formdata = res[0].schema.properties;
+      console.log(this.formdata);
+      localStorage.setItem('jsondata', JSON.stringify(this.formdata));
     });
   }
   regConfig: FieldConfig[] = JSON.parse(localStorage.getItem('jsondata'));
