@@ -58,14 +58,6 @@
                   }
                 ]
               },
-              "signup": {
-                "type": "button",
-                "inputType": "link",
-                "href": "/sign-up",
-                "htmlClass": "btn btn-default ws_cancel",
-                "label": "Sign Up",
-                "groupClass": "form-inline-btn"
-              },
               "login": {
                 "type": "button",
                 "inputType": "submit",
