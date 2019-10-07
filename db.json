@@ -61,8 +61,8 @@
               "login": {
                 "type": "button",
                 "inputType": "submit",
-                "htmlClass": "btn btn-success",
-                "groupClass": "form-inline-btn",
+                "htmlClass": "btn btn-primary pull-right",
+                "groupClass": "form-group",
                 "label": "Login"
               }
             }
