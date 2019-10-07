@@ -1,9 +1,10 @@
-    <div class="container-fluid">
-        <div class="main-container">
-      <div class="pageNewHeading">
-          <div class="margin-top" *ngFor="let field of fields;"  >
+    <div class="container-fluid align-content-center login-block-width">
+        <div class="main-container login-block">
+      <div class="pageNewHeading login-header">
+          <div *ngFor="let field of fields;" class="col-md-12" >
             <div *ngIf="field && field.type==='object'"  >
-                  <h3  dynamicField [field]="field" ></h3>
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                  <ng-container  dynamicField [field]="field" ></ng-container>
                 </div>
             </div>
             </div>

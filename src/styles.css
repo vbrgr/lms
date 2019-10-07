@@ -14,7 +14,42 @@
 .top-noicon .profileNav > a{ margin-bottom: 0px !important;}
 .top-noicon .rightNavigation > li > a{     margin: 0;}
 .top-noicon .navbar-right.navbar-nav>li>a{     padding: 0px 15px 0px 0px !important;}
-
+.login-block-width {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+.login-block-width h3 {
+  text-align: center;
+}
+.login-block {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(107,107,107,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(107,107,107,1);
+  box-shadow: 0px 0px 5px 0px rgba(107,107,107,1);
+}
+.login-header {
+  background-color: #3a3c82;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+}
+.login-header h1 {
+  color: #fff;
+  font-size: 18px;
+  padding: 9px 0px 0px 0px;
+  margin: 0px;
+}
+.login-block .login-body {
+  padding: 24px 20px;
+}
+.login-body .input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
 .pageHeading{ margin-top:74px;}
 .side-toggle .pageHeading{ margin-top:0px;}
 .sidebar-mini .content-page{ margin-left: 70px;}
