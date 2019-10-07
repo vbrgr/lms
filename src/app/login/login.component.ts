@@ -14,9 +14,6 @@ import { FormGroup } from '@angular/forms';
 
 export class LoginComponent implements OnInit {
   formdata: {};
-  loginForm: FormGroup;
-  submitted = false;
-  invalidLogin: boolean;
   loading = false;
   errorMsg: string;
   @ViewChild('DynamicFormComponent') form: DynamicFormComponent;
@@ -37,15 +34,7 @@ export class LoginComponent implements OnInit {
     return this.formdata[name];
   }
   submit(value: any) {
-    this.submitted = true;
-
-    // stop here if form is invalid
-    if (this.loginForm.invalid) {
-        return;
-    }
-
-    this.signIn(this.loginForm.value);
-   // console.log(value);
+    this.signIn(value);
    }
    ngOnInit() {
     if (this.authService.isAuthenticated()) {
@@ -75,7 +64,6 @@ export class LoginComponent implements OnInit {
             }
             this.authService.setLoggedIn(true);
           } else {
-            this.invalidLogin = true;
             this.errorMsg = result.errorMessage;
             this.loading = false;
           }

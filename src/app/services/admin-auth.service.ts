@@ -24,9 +24,8 @@ export class AdminAuthService {
     } else {
       this.ncredentials = credentials;
     }
-    return this.http.post('https://my-json-server.typicode.com/vbrgr/lms/users', this.ncredentials).map(res => {
-          localStorage.setItem('currentUserToken', res.token);
-      });
+    // tslint:disable-next-line:max-line-length
+    return this.http.post('https://my-json-server.typicode.com/vbrgr/lms/users', this.ncredentials);
   }
 
   getUserDetails() {
