@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FieldConfig } from '../../models/Field.interface';
 import { FormGroup } from '@angular/forms';
 

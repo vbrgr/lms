@@ -19,6 +19,12 @@
 .side-toggle .pageHeading{ margin-top:0px;}
 .sidebar-mini .content-page{ margin-left: 70px;}
 .sidebar-mini .pageHeading{     margin-top: 0;}
+
+.pageNewHeading{ margin-top:40px; margin-left: 35px;}
+.side-toggle .pageNewHeading{ margin-top:0px;}
+.sidebar-mini .content-page{ margin-left: 70px;}
+.sidebar-mini .pageNewHeading{     margin-top: 0;}
+
 .btn.toggle{ position: absolute; top: 12px;left: 28px;  background: none;  font-size: 20px;  padding: 0; border: none;}
 
 .ng-sidebar {  min-width: 250px;  max-width: 250px;  background: #404E67;  color: #fff;  transition: all 0.3s;}

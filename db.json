@@ -17,7 +17,7 @@
                 "inputType": "email",
                 "htmlClass": "form-control",
                 "groupClass": "form-group",
-                "columnClass": "col-md-12",
+                "columnClass": "col-md-6",
                 "description": "",
                 "validations": [
                   {
@@ -48,7 +48,7 @@
                 "inputType": "password",
                 "htmlClass": "form-control",
                 "groupClass": "form-group",
-                "columnClass": "col-md-12",
+                "columnClass": "col-md-6",
                 "description": "",
                 "validations": [
                   {

@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
       Object.keys(this.formdata).forEach( (k, v) => {
         main.push(this.getData(k));
       });
+      main.push(res[0].schema);
      // console.log(main);
       localStorage.setItem('jsondata', JSON.stringify(main));
     });

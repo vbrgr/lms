@@ -20,6 +20,7 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { TextareaComponent } from './components/textarea/textarea.component';
 import { FormTitleComponent } from './components/form-title/form-title.component';
 import { HeaderNavComponent } from './components/header-nav/header-nav.component';
+import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.directive';
 
 
 
@@ -31,6 +32,7 @@ import { HeaderNavComponent } from './components/header-nav/header-nav.component
     FooterComponent,
     MenuComponent,
     LoginComponent,
+    DynamicFieldDirective,
     InputComponent,
     ButtonComponent,
     SelectComponent,
