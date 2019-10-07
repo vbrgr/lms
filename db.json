@@ -4,7 +4,8 @@
           "id":1,
           "email": "govinda@rpwebapps.in",
           "password": "123456",
-          "type": "admin"
+          "type": "Admin",
+          "token": "123456"
         }
     ],
     "login-form": [

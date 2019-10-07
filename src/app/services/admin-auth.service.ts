@@ -25,7 +25,8 @@ export class AdminAuthService {
       this.ncredentials = credentials;
     }
     // tslint:disable-next-line:max-line-length
-    return this.http.post('https://my-json-server.typicode.com/vbrgr/lms/users', this.ncredentials);
+    const result =  this.http.get('https://my-json-server.typicode.com/vbrgr/lms/users?email='+credentials.email+'&password='+credentials.password+'&type=admin');
+  return result;
   }
 
   getUserDetails() {
