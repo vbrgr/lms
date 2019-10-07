@@ -1,9 +1,8 @@
-    <div class="container-fluid login-block-width">
+    <div class="login-block-width">
         <div class="login-block">
       <div class="login-header">
           <div *ngFor="let field of fields;" class="col-md-12" >
             <div *ngIf="field && field.type==='object'"  >
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
                   <ng-container  dynamicField [field]="field" ></ng-container>
                 </div>
             </div>

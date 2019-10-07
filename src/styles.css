@@ -30,12 +30,7 @@
   -moz-box-shadow: 0px 0px 5px 0px rgba(107,107,107,1);
   box-shadow: 0px 0px 5px 0px rgba(107,107,107,1);
 }
-.login-header {
-  background-color: #3a3c82;
-  color: #fff;
-  text-align: center;
-  padding: 15px 10px;
-}
+
 .login-header h1 {
   color: #fff;
   font-size: 18px;
@@ -50,6 +45,24 @@
   display: table;
   border-collapse: separate;
 }
+.login-block .btn-primary {
+  background-color: #446627 !important;
+  border-color: #446627 !important;
+  border-radius:14px;
+}
+
+.login-header .fa-user-circle {
+  display: block;
+  clear: both;
+  font-size: 45px;
+}
+.login-header {
+  background-color: #446627;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+}
+
 .pageHeading{ margin-top:74px;}
 .side-toggle .pageHeading{ margin-top:0px;}
 .sidebar-mini .content-page{ margin-left: 70px;}
