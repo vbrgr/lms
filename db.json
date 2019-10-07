@@ -62,7 +62,7 @@
                 "type": "button",
                 "inputType": "submit",
                 "htmlClass": "btn btn-primary pull-right",
-                "groupClass": "form-group",
+                "groupClass": "form-group clearfix",
                 "label": "Login"
               }
             }
