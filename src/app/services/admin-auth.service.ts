@@ -16,23 +16,18 @@ export class AdminAuthService {
   ncredentials: any;
   public loggedInStatus = false;
   constructor(private http: HttpClient, private userServ: UserService,
-              private router: Router, private socialService: AuthService, public jwtHelper: JwtHelperService) {
+              private router: Router, public jwtHelper: JwtHelperService) {
   }
-  /* login(credentials) {
-    if (credentials.id) {
-      this.ncredentials = { 'email': credentials.email, 'password': credentials.id, 'type': 'admin' };
+  login(credentials) {
+    if (credentials.password) {
+      this.ncredentials = { 'email': credentials.email, 'password': credentials.password, 'type': 'admin' };
     } else {
       this.ncredentials = credentials;
     }
-    return this.http.post('/api/login', this.ncredentials).map(res => {
-        if (res.json().errorMessage) {
-          return res.json();
-        } else {
-          localStorage.setItem('currentUserToken', res.json().token);
-          return { 'token': res.json().token, 'type': res.json().type };
-        }
-      }).catch(this._handleError);
-  } */
+    return this.http.post('https://my-json-server.typicode.com/vbrgr/lms/users', this.ncredentials).map(res => {
+          localStorage.setItem('currentUserToken', res.token);
+      });
+  }
 
   getUserDetails() {
     return this.http.get('/api/data');
@@ -53,12 +48,12 @@ export class AdminAuthService {
     this.loggedInStatus = value;
   }
 
-  /* getCurrentUser(): any {
+  getCurrentUser(): any {
     const token = localStorage.getItem('currentUserToken');
-    return this._http.get('/api/user/' + token).map(res => {
-      return res.json().result;
+    return this.http.get('https://my-json-server.typicode.com/vbrgr/lms/users/' + token).map(res => {
+      return res;
     });
-  } */
+  }
   saveToken(token: string): any {
     const body = { token };
     // this.token = token;
@@ -70,7 +65,6 @@ export class AdminAuthService {
 
   logout() {
     // remove user from local storage to log user out
-    this.socialService.signOut();
     localStorage.removeItem('currentUserToken');
     this.router.navigate(['/']);
   }

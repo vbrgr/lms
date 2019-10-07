@@ -12,7 +12,4 @@ formd: FieldConfig[];
   public getForm() {
     return this.http.get('https://my-json-server.typicode.com/vbrgr/lms/login-form');
   }
-  public getRegForm() {
-    return this.http.get('http://localhost:3000/reg-form');
-  }
 }

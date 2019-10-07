@@ -3,6 +3,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { JwtModule } from '@auth0/angular-jwt';
+
 import { SidebarModule } from 'ng-sidebar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -51,6 +53,13 @@ import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.
     ReactiveFormsModule,
     SidebarModule.forRoot(),
     BrowserModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: () => {
+          return localStorage.getItem('currentUserToken');
+        }
+      }
+    }),
     AppRoutingModule
   ],
   schemas: [
