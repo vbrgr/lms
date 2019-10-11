@@ -13,6 +13,7 @@ import { UserService } from './user.service';
 export class AdminAuthService {
   private token: string;
   ncredentials: any;
+  response: {};
   public loggedInStatus = false;
   constructor(private http: HttpClient, private userServ: UserService,
               private router: Router, public jwtHelper: JwtHelperService) {
@@ -25,8 +26,10 @@ export class AdminAuthService {
       this.ncredentials = credentials;
     } */
     // tslint:disable-next-line:max-line-length
-    const result =  this.http.get('https://my-json-server.typicode.com/vbrgr/lms/users' + '?email=' + credentials.email + '&password=' + credentials.password + '&type=Admin');
-    return result;
+    this.http.get('https://my-json-server.typicode.com/vbrgr/lms/users' + '?email=' + credentials.email + '&password=' + credentials.password + '&type=Admin').subscribe( res => {
+      this.response = res;
+    });
+    return this.response;
   }
 
   /* getUserDetails() {

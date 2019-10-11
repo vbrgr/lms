@@ -63,7 +63,7 @@ export class LoginComponent implements OnInit {
             } else if (result[0].type === 'User') {
               this.router.navigate(['user/profile']);
             }
-            console.log(result[0].token);
+            console.log(result);
             localStorage.setItem('currentUserToken', result[0].token);
             this.authService.setLoggedIn(true);
           } else {
