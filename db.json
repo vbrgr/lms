@@ -3,9 +3,9 @@
         {
           "id":1,
           "email": "govinda@rpwebapps.in",
-          "password": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdvdmluZGFAcnB3ZWJhcHBzLmluIiwicGFzc3dvcmQiOiJlMGQ4MGE5YTZhNDljYzEwNDc2ZDE0ZTVhNmVmNjc2ZCIsIm5hbWUiOiJHb3ZpbmRhIFJhanUgVmFsbGFiaGFuaSIsInR5cGUiOiJBZG1pbiIsImlkIjoyLCJleHAiOjE1NjE2MjUzMzgsImlhdCI6MTU2MTQ1MjUzOH0.mTEKaO-13NGzdcx9AtFtCoX8v2g2-Vpz82Pu3nJJrcc",
+          "password": "123456",
           "type": "Admin",
-          "token": "123456"
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdvdmluZGFAcnB3ZWJhcHBzLmluIiwicGFzc3dvcmQiOiJlMGQ4MGE5YTZhNDljYzEwNDc2ZDE0ZTVhNmVmNjc2ZCIsIm5hbWUiOiJHb3ZpbmRhIFJhanUgVmFsbGFiaGFuaSIsInR5cGUiOiJBZG1pbiIsImlkIjoyLCJleHAiOjE1NjE2MjUzMzgsImlhdCI6MTU2MTQ1MjUzOH0.mTEKaO-13NGzdcx9AtFtCoX8v2g2-Vpz82Pu3nJJrcc"
         }
     ],
     "login-form": [

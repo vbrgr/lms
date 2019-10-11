@@ -27,6 +27,7 @@ export class AdminAuthService {
     } */
     // tslint:disable-next-line:max-line-length
     this.http.get('https://my-json-server.typicode.com/vbrgr/lms/users' + '?email=' + credentials.email + '&password=' + credentials.password + '&type=Admin').subscribe( res => {
+      console.log(res);
       this.response = res;
     });
     return this.response;
