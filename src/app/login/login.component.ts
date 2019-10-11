@@ -17,7 +17,8 @@ export class LoginComponent implements OnInit {
   loading = false;
   errorMsg: string;
   @ViewChild('DynamicFormComponent') form: DynamicFormComponent;
-  constructor(private forms: FormService, private router: Router, private route: ActivatedRoute,  private authService: AdminAuthService) {
+  constructor(private forms: FormService, private router: Router, private route: ActivatedRoute,
+              private authService: AdminAuthService) {
     this.forms.getForm().subscribe(res => {
       this.formdata = res[0].schema.properties;
       const main = [];
