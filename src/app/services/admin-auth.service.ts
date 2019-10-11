@@ -6,7 +6,6 @@ import { Router } from '@angular/router';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
 import { UserService } from './user.service';
-import { AuthService } from 'angularx-social-login';
 
 @Injectable({
   providedIn: 'root'
@@ -19,20 +18,21 @@ export class AdminAuthService {
               private router: Router, public jwtHelper: JwtHelperService) {
   }
   login(credentials) {
-    if (credentials.password) {
-      this.ncredentials = { 'email': credentials.email, 'password': credentials.password, 'type': 'admin' };
+    /* if (credentials.password) {
+      this.ncredentials = { 'Content-Type': 'application/json', 'email': credentials.email,
+      'password': credentials.password, 'type': 'Admin' };
     } else {
       this.ncredentials = credentials;
-    }
+    } */
     // tslint:disable-next-line:max-line-length
-    const result =  this.http.get('https://my-json-server.typicode.com/vbrgr/lms/users?email='+credentials.email+'&password='+credentials.password+'&type=admin');
-  return result;
+    const result =  this.http.get('https://my-json-server.typicode.com/vbrgr/lms/users' + '?email=' + credentials.email + '&password=' + credentials.password + '&type=Admin');
+    return result;
   }
 
-  getUserDetails() {
+  /* getUserDetails() {
     return this.http.get('/api/data');
 
-  }
+  } */
   /* isLoggedIn(): Observable<IsLoggedIn> {
     return this.http.get('/api/isloggedin').map(res => {
       return res.json();
@@ -50,9 +50,7 @@ export class AdminAuthService {
 
   getCurrentUser(): any {
     const token = localStorage.getItem('currentUserToken');
-    return this.http.get('https://my-json-server.typicode.com/vbrgr/lms/users/' + token).map(res => {
-      return res;
-    });
+    return this.http.get('https://my-json-server.typicode.com/vbrgr/lms/users?token=' + token);
   }
   saveToken(token: string): any {
     const body = { token };

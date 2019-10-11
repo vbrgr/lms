@@ -56,13 +56,14 @@ export class LoginComponent implements OnInit {
       this.loading = true;
       this.authService.login(credentials)
         .subscribe(result => {
-          console.log(result);
           if (result[0].token) {
             if (result[0].type === 'Admin') {
             this.router.navigate(['admin/dashboard']);
             } else if (result[0].type === 'User') {
               this.router.navigate(['user/profile']);
             }
+            console.log(result[0].token);
+            localStorage.setItem('currentUserToken', result[0].token);
             this.authService.setLoggedIn(true);
           } else {
             this.errorMsg = result[0].errorMessage;

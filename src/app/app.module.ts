@@ -23,6 +23,9 @@ import { TextareaComponent } from './components/textarea/textarea.component';
 import { FormTitleComponent } from './components/form-title/form-title.component';
 import { HeaderNavComponent } from './components/header-nav/header-nav.component';
 import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.directive';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { AdminLayoutComponent } from './admin/admin-layout/admin-layout.component';
+import { AdminComponent } from './admin/admin/admin.component';
 
 
 
@@ -44,7 +47,10 @@ import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.
     TextareaComponent,
     FormTitleComponent,
     HeaderNavComponent,
-    DynamicFormComponent
+    DynamicFormComponent,
+    DashboardComponent,
+    AdminLayoutComponent,
+    AdminComponent
   ],
   imports: [
     CommonModule,
